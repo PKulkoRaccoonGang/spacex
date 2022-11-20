@@ -9,7 +9,6 @@
   },
   "description": "The `SpaceX Mission project` will provide an opportunity to get acquainted with the various space flights and missions of the Space X company",
   "dependencies": {
-    "@axe-core/react": "^4.4.2",
     "@react-pdf/renderer": "^3.0.0",
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.3",
