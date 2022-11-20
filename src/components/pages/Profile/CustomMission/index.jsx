@@ -5,7 +5,6 @@ import PDFReport from './PDFReport';
 import Astronaut from './Astronaut';
 
 import './CustomMission.scss';
-import { useDispatch, useSelector } from 'react-redux';
 
 const astronautPositions = [
 	'Commander',

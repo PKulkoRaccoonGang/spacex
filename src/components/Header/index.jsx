@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthenticate } from '../../hooks/useAuthenticate';
 import { removeUser } from '../../store/slices/userSlice';

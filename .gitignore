@@ -1,0 +1,22 @@
+.DS_Store
+.eslintcache
+node_modules
+npm-debug.log
+coverage
+jest*
+dist
+src/i18n/transifex_input.json
+src/i18n/temp
+
+# gatsby files
+www/.cache/
+www/public
+
+# vscode
+.vscode/
+
+# jetbrains IDEs
+.idea/
+
+# Local Netlify folder
+.netlify
