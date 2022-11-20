@@ -1,0 +1,18 @@
+@import '../../../core/scss/extras';
+
+.welcome-page {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    top: 20%;
+    text-align: center;
+
+    .welcome-page__gif {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+
+        @include box-shadow-control(1, "centered");
+    }
+}

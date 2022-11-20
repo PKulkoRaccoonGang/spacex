@@ -1,0 +1,106 @@
+{
+  "name": "spacex-missions",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Peter Kulko",
+    "email": "petrokulko@gmail.com",
+    "url": "https://gitlab.raccoongang.com/peter.kulko/spacex-missions"
+  },
+  "description": "The `SpaceX Mission project` will provide an opportunity to get acquainted with the various space flights and missions of the Space X company",
+  "dependencies": {
+    "@axe-core/react": "^4.4.2",
+    "@react-pdf/renderer": "^3.0.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^14.0.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "bootstrap": "^5.1.3",
+    "browserify": "^17.0.0",
+    "envify": "^4.1.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "hover.css": "^2.3.2",
+    "instantsearch.css": "^7.4.5",
+    "node-sass": "^7.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.2.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.33.1",
+    "react-icons": "^4.3.1",
+    "react-images-uploading": "^3.1.7",
+    "react-instantsearch-hooks-web": "^6.38.1",
+    "react-player": "^2.10.1",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "algoliasearch": "^4.14.2",
+    "animate.css": "^4.1.1",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "firebase": "^9.2.0",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "react-instantsearch-dom": "^6.38.0",
+    "react-instantsearch-dom-maps": "^6.38.0",
+    "react-pdf": "^5.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build serve": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:eslint": "eslint . --ext .ts,.js,.tsx,.jsx",
+    "lint:eslint:fix": "eslint . --ext .ts,.js,.tsx,.jsx --fix",
+    "prettify": "prettier --write **/*.{ts,tsx,js,jsx,json}"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint": {
+    "lint-staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "npm run lint:eslint:fix",
+      "git add --force"
+    ],
+    "*.{ts,tsx,js,jsx,json}": [
+      "npm run prettify",
+      "git add --force"
+    ]
+  }
+}

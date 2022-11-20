@@ -1,0 +1,25 @@
+@import '../../../../core/scss/_extras.scss';
+
+.missions {
+    &__title {
+        font-family: 'Open-Sans-Bold', sans-serif;
+        font-size: 48px;
+        line-height: 70px;
+        color: $primal-color;
+        margin-bottom: 36px;
+        box-shadow: inset 0 0 0 0 $primal-color;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+        &:hover {
+            box-shadow: inset 490px 0 0 0 $primal-color;
+            color: $white;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}

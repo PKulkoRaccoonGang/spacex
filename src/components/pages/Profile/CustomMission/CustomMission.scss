@@ -1,0 +1,62 @@
+.custom__mission {
+    border: 1px solid #0d6efd;
+    padding: 10px;
+    background-color: #eff5fe;
+
+    .custom__mission-data {
+        border: 1px solid #0d6efd;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        background-color: #eff5fe;
+
+        &.hide {
+            display: none;
+        }
+
+        .form-label {
+            display: block;
+        }
+
+        .form-control {
+            margin-bottom: 10px;
+        }
+
+        .form-select {
+            margin-bottom: 10px;
+        }
+
+        .custom__mission-btn {
+            width: 100%;
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+
+        .custom__mission-astronaut-photo {
+            border-radius: 50%;
+        }
+
+        .custom__mission-img {
+            width: 155px;
+            border-radius: 50%;
+            border: 1px solid #0d6efd;
+        }
+    }
+
+    .custom__mission-datapicker {
+        height: 38px;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        padding: .375rem .75rem;
+    }
+
+    .react-datepicker__triangle {
+        left: -160px !important;
+    }
+}

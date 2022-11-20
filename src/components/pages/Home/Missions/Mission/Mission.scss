@@ -1,0 +1,37 @@
+@import "../../../../../core/scss/extras";
+
+.mission {
+    background-color: $base-color;
+    border-radius: 5px;
+    padding: 29px 31px 29px 36px;
+    height: 268px;
+    border: 1px solid #0d6efd;
+
+    @include box-shadow-control(1, "centered");
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 13px;
+        color: $primal-color;
+        max-width: 370px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__description {
+        margin-bottom: 24px;
+        max-height: 88px;
+        min-height: 88px;
+        max-width: 370px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}

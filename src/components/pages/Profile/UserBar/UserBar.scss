@@ -1,0 +1,14 @@
+.user-bar {
+    padding: 10px;
+    margin-right: 10px;
+
+    &__image {
+        width: 300px;
+        border-radius: 50%;
+        border: 3px solid #0d6efd;
+    }
+
+    &__email {
+        display: block;
+    }
+}

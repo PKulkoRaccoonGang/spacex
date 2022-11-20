@@ -1,0 +1,25 @@
+@import '../../../core/scss/extras';
+
+.register-page {
+    margin-top: 100px;
+    text-align: center;
+
+    .register-page__gif {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+
+        @include box-shadow-control(1, 'centered');
+    }
+
+    .register-page__alert {
+        max-width: 40%;
+        margin: 0 auto;
+        border-radius: 100px;
+
+        .register-page__alert-link {
+            text-decoration: underline;
+        }
+    }
+}

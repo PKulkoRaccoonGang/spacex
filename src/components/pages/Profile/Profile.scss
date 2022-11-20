@@ -1,0 +1,17 @@
+.profile__page {
+    margin-top: 50px;
+}
+
+.profile__page-items {
+    display: flex;
+
+    .profile__page-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .profile__page-title {
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.ais-Hits-item {
+    list-style: none;
+    border: 1px solid #0d6efd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #eff5fe;
+
+    .hit-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 0 0;
+        grid-auto-flow: row;
+    }
+}

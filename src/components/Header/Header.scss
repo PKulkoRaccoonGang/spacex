@@ -1,0 +1,25 @@
+@import '../../core/scss/extras';
+
+.header {
+    background-color: $base-color;
+    padding: 17px 0;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    @include box-shadow-control(1, 'down');
+
+    a {
+        margin-right: 10px;
+
+        &.active {
+            color: #0d6efd;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

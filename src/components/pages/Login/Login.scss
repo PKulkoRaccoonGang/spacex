@@ -1,0 +1,25 @@
+@import '../../../core/scss/extras';
+
+.login-page {
+    margin-top: 80px;
+    text-align: center;
+
+    .login-page__gif {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+
+        @include box-shadow-control(1, 'centered');
+    }
+
+    .login-page__alert {
+        max-width: 40%;
+        margin: 0 auto;
+        border-radius: 100px;
+
+        .login-page__alert-link {
+            text-decoration: underline;
+        }
+    }
+}
